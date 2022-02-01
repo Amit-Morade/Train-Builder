@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./railroad.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>RailRoad Online Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <!--Difficulty Dropdown-->
+            <label for="difficulty">Difficulty</label>
+            <select name="difficulty">
+                <option value="0">Casual</option>
+                <option value="0.25">Easy</option>
+                <option value="0.5">medium</option>
+                <option value="075">Hard</option>
+                <option value="1">Realistic</option>
+            </select>
+            <button id="clear__workspace" class="clear__workspace" data-toggle="tooltip" title="This will clear all workspace">Clear Workspace</button>
+        </div>
+        <div class="views">
+
+            <!--Column1-->
+            <div class="column__one">
+
+                <!--Engine-->
+                <div class="engine__view">
+                    <div class="engine__view-heading">
+                        <h2>Select Engine</h2>
+                    </div>
+                    <div class="engine__view-body" id="engine__view-body">
+                        <div class="add__engine">
+                            <button id="add__engine">Add Engine</button>
+                        </div>
+                        <div class="engine__list" id="engine__list">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Results-->
+                <div class="result__view">
+                    Result
+                </div>
+
+            </div>
+
+            <!--Column2-->
+            <div class="column__two">
+                <div class="cargo__view">
+                    <div class="cargo__view-heading">
+                        <h2>Cargo</h2>
+                    </div>
+                    <div class="cargo__view-body">
+                        <div class="add__cargo">
+                            <button class="custom-btn btn-6" id="add__cargo">Add Cargo</button>
+                        </div>
+                        <div class="cargo__list" id="cargo__list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Created by | Amit & Param
+        </footer>
+    </div> 
+    <script src="./utils/data.js"></script>
+    <script src="./utils/engine.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <label for="Engine">Engine</label>
+    <select id="engine">
+        <option>D&RG CLASS 70</option>
+        <option>HEISLER</option>
+        <option>COOKE MOGUL</option>
+        <option>EUREKA</option>
+        <option>PORTER 1 (BETSY)</option>
+        <option>PORTER 2</option>
+        <option>HANDCAR</option>
+        <option>NONE</option>
+    </select>
+    <br>
+    <p>
+        <select id="weight-units">
+            <option>lbs</option>
+            <option>tons</option>
+        </select>
+    </p>
+    <br>
+    <p>
+        <label>Tractive Value: </label>
+        <span id="tractive-effort">0</span>
+    </p>
+    <p>
+        <label>Engine Weight: </label>
+        <span id="engine-weight">0</span>
+    </p>
+-->
+    

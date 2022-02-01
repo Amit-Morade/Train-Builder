@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.controls {
+    background: lightblue;;
+    padding: 10px;
+}
+
+.clear__workspace {
+    font-size: 15px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.clear__workspace:hover {
+    background-color: red;
+    color: white;
+}
+
+.views {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    flex-grow: 100;
+    height: 630px;
+}
+
+.column__one {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Engine container styles*/
+.engine__view {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #888888;
+}
+
+.engine__view-heading{
+    border-bottom: 1px solid #888888;
+}
+
+.engine__view-heading h2{
+    padding: 5px;
+}
+
+.engine__view-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.add__engine {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.engine__list {
+    flex-grow: 1;
+}
+
+.engine__container {
+    padding: 10px;
+}
+
+.display__engine {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.engine__teffort__input {
+    width: 100px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.display__tender {
+    visibility: hidden;
+}
+/*Result container styles*/
+.result__view {
+    background-color: rgb(15, 98, 170);
+    flex-grow: 1;
+}
+
+/*Cargo container styles*/
+.column__two {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 30px;
+    border: 2px solid black;
+}
+
+.cargo__view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.cargo__view-heading h2{
+    padding: 5px;
+}
+
+.cargo__view-body{
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.cargo__container {
+    padding: 10px;
+}
+
+.display__cargo {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    background-color: beige;
+}
+/*button*/
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-6 {
+    background: rgb(247,150,192);
+  background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
